@@ -18,7 +18,7 @@ This script intentionally includes 3 common security vulnerabilities:
    * **What it is:** The script takes the unsanitized user input and passes it directly to the system shell using the `os.system()` function.
    * **Why it's a risk:** An attacker can input something like `8.8.8.8; cat /etc/passwd`. The system will execute the ping, and then execute the dangerous `cat` command, potentially taking over the system or leaking sensitive server data.
 
-## How to Fix It (in `secure_network_checker.py`)
+## How to Fix It (in `Secure_Network_checker.py`)
 To fix these vulnerabilities, a secure version has been created with the following mitigations:
 
 1. **Environment Variables:** Credentials are removed from the code and are now loaded safely from the server's environment variables (`os.environ.get`).
