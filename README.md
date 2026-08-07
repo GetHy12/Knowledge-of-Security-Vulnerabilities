@@ -3,7 +3,7 @@
 ## What the script does
 This is a simple Python Command Line Interface (CLI) application designed to check network connectivity. It requires the user to log in securely and then prompts the user to enter a target IP address to execute a system `ping` command.
 
-## Vulnerabilities Included (in `network_checker.py`)
+## Vulnerabilities Included (in `Unsecure_network_checker.py`)
 This script intentionally includes 3 common security vulnerabilities:
 
 1. **Hardcoded Credentials**
